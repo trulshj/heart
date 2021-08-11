@@ -3,7 +3,14 @@ function App() {
     <div className="App">
       <Heart />
       <div class="credit">
-        made with love by <a href="https://www.github.com/trulshj" target='_blank' rel='noreferrer'>truls</a>
+        made with love by{" "}
+        <a
+          href="https://www.github.com/trulshj"
+          target="_blank"
+          rel="noreferrer"
+        >
+          truls
+        </a>
       </div>
     </div>
   );
