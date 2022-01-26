@@ -1,28 +1,26 @@
-function App() {
-  return (
-    <div className="App">
-      <Heart />
-      <div class="credit">
-        made with love by{" "}
-        <a
-          href="https://www.github.com/trulshj"
-          target="_blank"
-          rel="noreferrer"
-        >
-          truls
-        </a>
-      </div>
-    </div>
-  );
-}
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import NoPage from "./pages/NoPage";
 
-function Heart() {
-  return (
-    <div>
-      <div class="back"></div>
-      <div class="heart"></div>
-    </div>
-  );
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+function App() {
+    return (
+        <div className="App">
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Layout />}>
+                        <Route index element={<Home />} />
+                        <Route path="about" element={<About />} />
+                        <Route path="projects" element={<Projects />} />
+                        <Route path="*" element={<NoPage />} />
+                    </Route>
+                </Routes>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;
