@@ -10,8 +10,8 @@ function Home() {
             </div>
             <img
                 className={styles.headshot}
-                src="https://media-exp1.licdn.com/dms/image/C4D03AQEN23wl30_4XQ/profile-displayphoto-shrink_800_800/0/1598609080694?e=1648684800&v=beta&t=rbVo3Y9pyKU7KDhIwq6nP8eIyhKd_jPjf65Y6kZrgGs"
                 alt="Headshot"
+                src="../../headshot.jpg"
             ></img>
             <div className={styles.projectLinksWrapper}>
                 <ProjectLink href="https://license-your-stuff.netlify.app/">

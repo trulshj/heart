@@ -1,10 +1,12 @@
 import styles from "../styles/Layout.module.css";
 import { Outlet, Link } from "react-router-dom";
+import DarkModeToggle from "./DarkModeToggle";
 
 function Layout() {
     return (
-        <div class={styles.container}>
-            <header class={styles.header}>
+        <div className={styles.container}>
+            <DarkModeToggle />
+            <header className={styles.header}>
                 <h1 className={styles.title}>Truls Henrik</h1>
                 <div className={styles.headerSide + " " + styles.left}>
                     <Link to="/">/home</Link>
@@ -35,7 +37,7 @@ function Layout() {
                     </a>
                 </div>
             </header>
-            <main class={styles.main}>
+            <main className={styles.main}>
                 <Outlet />
             </main>
         </div>

@@ -1,6 +1,8 @@
 .projectList {
     width: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
     justify-content: flex-start;
     align-items: center;
 }
@@ -10,6 +12,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 2px dashed transparent;
+    border-bottom: 2px dashed transparent;
+    transition: all 200ms ease-in-out;
+}
+
+.project:hover,
+.project:focus {
+    border-top: 2px dashed var(--accent);
+    border-bottom: 2px dashed var(--accent);
+}
+
+.project:hover > a,
+.project:focus > a {
+    color: var(--accent);
 }
 
 .project > p {
