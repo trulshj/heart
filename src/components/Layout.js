@@ -1,11 +1,9 @@
 import styles from "../styles/Layout.module.css";
 import { Outlet, Link } from "react-router-dom";
-import DarkModeToggle from "./DarkModeToggle";
 
 function Layout() {
     return (
         <div className={styles.container}>
-            <DarkModeToggle />
             <header className={styles.header}>
                 <h1 className={styles.title}>Truls Henrik</h1>
                 <div className={styles.headerSide + " " + styles.left}>
