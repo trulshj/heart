@@ -1,7 +1,6 @@
 import styles from "../styles/Projects.module.css";
 import utilityStyles from "../styles/Utility.module.css";
 
-
 const projectArray = [
     {
         name: "OFFLINE",
@@ -10,7 +9,7 @@ const projectArray = [
     },
     {
         name: "Elden Ring Rune Calculator",
-        link: "runes.truls.dev",
+        link: "https://runes.truls.dev",
         about: "En kalkulator for hvor mange runes du trenger for å levle opp i Elden Ring",
     },
     {
