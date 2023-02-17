@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import NoPage from "./pages/NoPage";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ColorContrast from "./pages/ColorContrast";
 
 function App() {
     return (
@@ -15,6 +16,10 @@ function App() {
                         <Route index element={<Home />} />
                         <Route path="about" element={<About />} />
                         <Route path="projects" element={<Projects />} />
+                        <Route
+                            path="color-contrast"
+                            element={<ColorContrast />}
+                        />
                         <Route path="*" element={<NoPage />} />
                     </Route>
                 </Routes>
