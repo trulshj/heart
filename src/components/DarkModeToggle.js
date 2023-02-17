@@ -7,7 +7,7 @@ function DarkModeToggle() {
     const [icon, setIcon] = useState("🌙");
 
     return (
-        <button className={styles.darkModeButton} onClick={() => {isDark ? setIcon("☀︎") : setIcon("🌙"); setIsDark(!isDark)}}>{icon}</button>
+        <button className={styles.darkModeButton} onClick={() => {isDark ? setIcon("🌞") : setIcon("🌚"); setIsDark(!isDark)}}>{icon}</button>
     )
 }
 
